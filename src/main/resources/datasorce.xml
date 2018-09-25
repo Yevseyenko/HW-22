@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<parameters>
+    <login>surfakeemail@gmail.com</login>
+    <receiver>jevsejen@gmail.com</receiver>
+    <password>Fake123456</password>
+    <subject>Some subject</subject>
+    <text>Hi this is test email sended by selenium</text>
+    <link>google.com.ua</link>
+</parameters>
