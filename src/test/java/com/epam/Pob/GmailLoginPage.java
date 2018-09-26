@@ -1,5 +1,7 @@
 package com.epam.Pob;
 
+import com.epam.customElement.Button;
+import com.epam.customElement.Input;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,14 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GmailLoginPage {
     @FindBy(css = "a.gb_we.gb_Aa.gb_Fb[target='_top']")
-    public WebElement mailBtn;
+    public Button mailBtn;
     @FindBy(id = "identifierId")
-    public WebElement emailInput;
+    public Input emailInput;
     @FindBy(id = "identifierNext")
-    public WebElement nextLoginBtn;
+    public Button nextLoginBtn;
 
     public GmailLoginPage(WebDriver driver) {
-        PageFactory.initElements(new CustomFieldDecorator(driver), this);;
+        PageFactory.initElements(new CustomFieldDecorator(driver), this);
     }
 
     public void inputLoginAndSubmit(String login) {
