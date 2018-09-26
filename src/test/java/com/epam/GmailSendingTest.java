@@ -27,5 +27,6 @@ public class GmailSendingTest {
         gmailEmailPage.verifyingSentLetter(pageParameters.getPageParams("subject"),
                 pageParameters.getPageParams("text"));
         gmailEmailPage.deletingDeliveredMessage();
+        driver.quit();
     }
 }

@@ -14,7 +14,7 @@ public class GmailLoginPage {
     public WebElement nextLoginBtn;
 
     public GmailLoginPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(new CustomFieldDecorator(driver), this);;
     }
 
     public void inputLoginAndSubmit(String login) {

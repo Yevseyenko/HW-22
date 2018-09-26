@@ -14,7 +14,7 @@ public class GmailPasswordPage {
     public WebElement passwordNextBtn;
 
     public GmailPasswordPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(new CustomFieldDecorator(driver), this);
     }
 
     public void inputPasswordAndSubmit(String password, WebDriver driver) {

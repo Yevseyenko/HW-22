@@ -30,14 +30,14 @@ public class GmailEmailPage {
     @FindBy(css = "tbody>tr.zA.yO:nth-child(1)")
     private WebElement checkedBtn;
     @FindBy(xpath = "//div[@gh='mtb']/div/div[2]/div[3]")
-    private Button deleteBtn;
+    private WebElement deleteBtn;
     @FindBy(xpath = "//table[@role='presentation']//h2")
     private Label letterSubj;
     @FindBy(xpath = "//table[@role='presentation']//div[@dir]")
     private Label letterTxt;
 
     public GmailEmailPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(new CustomFieldDecorator(driver), this);;
     }
 
     public void writingLetterAndSubmit(String receiver, String subject, String text) {
