@@ -8,5 +8,9 @@ public class Button extends Element {
         super(webElement);
     }
 
-
+    @Override
+    public void click() {
+        super.isDiplayed();
+        super.click();
+    }
 }

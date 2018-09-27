@@ -7,4 +7,5 @@ public class Label extends Element {
         super(webElement);
     }
 
+
 }

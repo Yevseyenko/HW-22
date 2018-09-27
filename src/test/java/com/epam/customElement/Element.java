@@ -51,14 +51,20 @@ public class Element {
     public boolean isDiplayed() {
         return webElement.isDisplayed();
     }
-    public String getCssValue(String s){
+
+    public String getCssValue(String s) {
         return webElement.getCssValue(s);
     }
-    public boolean isEnable(){
+
+    public boolean isEnable() {
         return webElement.isEnabled();
     }
-    public boolean isSelected(){
-        return  webElement.isSelected();
+
+    public boolean isSelected() {
+        return webElement.isSelected();
+    }
+    public String getTagName(){
+       return webElement.getTagName();
     }
 
 }

@@ -10,7 +10,7 @@ public class Input extends Element {
 
     @Override
     public void sendKeys(CharSequence... keys) {
-        webElement.clear();
+        super.clear();
         super.sendKeys(keys);
       }
 }
